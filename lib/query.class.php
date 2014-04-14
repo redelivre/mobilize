@@ -8,7 +8,11 @@ class Ethymos_Query{
 	*
 	*/
 	public function __construct(){
-		$this->categoria_destaques = get_term_by('name', 'Destaques', 'category')->term_id;
+		$term = get_term_by('name', 'Destaques', 'category');
+		if($term !== false)
+		{
+			$this->categoria_destaques = $term->term_id;
+		}
 	}
 	/**
 	* Query para os destaques
