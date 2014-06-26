@@ -6,7 +6,7 @@
     $options = Mobilize::getOption();
 
     // add css style
-    wp_enqueue_style('mobilize', home_url() .'/wp-content/plugins/Mobilize/css/mobilize.css');
+    wp_enqueue_style('mobilize', home_url() .'/wp-content/plugins/mobilize/assets/css/mobilize.css');
     
     // header insertion
     get_header();
@@ -102,7 +102,7 @@
 			                    <?php echo $options['adesive']['description']; ?>
 			                </p>
 			
-			                <div class="sticked-avatar"><img class="sticker"src="<?php echo Mobilize::getAdesiveURL(); ?>" alt="" /><img width="80" height="80" src="<?php echo home_url(); ?>/wp-content/plugins/Mobilize/img/mistery_man.jpg" /></div>
+			                <div class="sticked-avatar"><img class="sticker"src="<?php echo Mobilize::getAdesiveURL(); ?>" alt="" /><img width="80" height="80" src="<?php echo home_url(); ?>/wp-content/plugins/mobilize/assets/img/mistery_man.jpg" /></div>
 			                <form method="post" enctype="multipart/form-data" target="_blank">
 			                    <?php Mobilize::printAdesiveNonce() ?>
 			                    <p>Envie sua foto: <input type="file" name="photo" /> <input class="mobilize-button" type="submit" value="Adesivar foto" /></p>
@@ -177,8 +177,8 @@
 			<!-- #mobilize-content -->        
 			
 			<!-- Javascripts -->
-			<script src="<?php echo home_url().'/wp-content/plugins/Mobilize/js/price.js'; ?>"></script>
-			<script src="<?php echo home_url().'/wp-content/plugins/Mobilize/js/template.js'; ?>"></script>
+			<script src="<?php echo home_url().'/wp-content/plugins/mobilize/assets/js/price.js'; ?>"></script>
+			<script src="<?php echo home_url().'/wp-content/plugins/mobilize/assets/js/template.js'; ?>"></script>
 			<!-- /Javascripts -->
 		</div>
 	</div>
