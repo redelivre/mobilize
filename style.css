@@ -282,14 +282,25 @@ Menu
 
    
 /* ==========================================================================
-  Home
+  Mobilize - Página de Mobilização
    ========================================================================== */
 
 #mobilize-content {
-	background: #c6c1c1;
 	min-height: 500px;
 	margin: 0 auto;	
+	padding: 0 4em;
 }
+
+#mobilize-sendto-form input[type="text"],
+#mobilize-sendto-form textarea {
+	margin-bottom: 0.8125em;
+	width: 100%;
+	box-sizing: content-box;
+}
+
+/* ==========================================================================
+  Home
+   ========================================================================== */
 
 #wrap .container {
 	background: #c6c1c1;
@@ -1497,4 +1508,4 @@ Comentários remover/resolver
 		float: none;
 		margin-left: 0;
 	}
-}
+
