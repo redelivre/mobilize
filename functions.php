@@ -56,7 +56,7 @@ class Ethymos{
 		*/		
 		register_sidebar(array(
 				'name' => 'sidebar',
-				'before_widget' => '<div class="sidebar-box">',
+				'before_widget' => '<div id="%1$s" class="widget %2$s sidebar-box" >',
 				'after_widget' => '</div>',
 				'before_title' => '<h2>',
 				'after_title' => '</h2>',
@@ -64,7 +64,7 @@ class Ethymos{
 		
 		register_sidebar(array(
 				'name' => 'sidebar-footer',
-				'before_widget' => '<div class="sidebar-footer span4">',
+				'before_widget' => '<div id="%1$s" class="widget %2$s sidebar-footer span4">',
 				'after_widget' =>'</div>',
 				'before_title' => '</h2>',
 				'after_title' => '</h2>',
