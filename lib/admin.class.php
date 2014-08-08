@@ -92,7 +92,23 @@ class Ethymos_Admin{
 					array('label' => __('Apresentação', '_mobilize'),
 						'section' => 'presentation',
 						'type' => 'textarea')));
-
+		// Comments FB
+		$wp_customize->add_section( 'mobilize_fb_comments', array(
+				'title'    => __( 'Comentários via Facebook', 'mobilize' ),
+				'priority' => 30,
+		) );
+		$wp_customize->add_setting( 'mobilize_display_fb_comments', array(
+				'capability' => 'edit_theme_options',
+		) );
+		
+		$wp_customize->add_control( 'mobilize_display_fb_comments', array(
+				'label'    => __( 'Exibe a caixa de comentários do Facebook', 'mobilize' ),
+				'section'  => 'mobilize_fb_comments',
+				'type'     => 'checkbox',
+				'settings' => 'mobilize_display_fb_comments'
+		) );
+		
+		
 		// Contact
 		$wp_customize->add_section('contact',
 				array('title' => __('Página de Contato', '_mobilize'), 'priority' => 30));
