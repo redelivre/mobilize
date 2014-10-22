@@ -10,7 +10,7 @@
 			
 			<div class="span4">
 				
-				<div class="info">
+				<div class="apresentacao-info">
 					<?php echo get_option('_mobilize_apresentacao'); ?>
 				</div>
 				<div class="widgets">

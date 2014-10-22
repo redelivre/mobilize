@@ -10,7 +10,7 @@
 			
 			<div class="span4 sidebar-home">
 				<?php if (get_theme_mod('show-presentation')): ?>
-					<pre class="info"><?php
+					<pre class="apresentacao-info"><?php
 						echo esc_html(get_theme_mod('presentation'));
 					?></pre>
 				<?php endif; ?>

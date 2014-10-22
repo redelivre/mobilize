@@ -327,7 +327,7 @@ Menu
 	
 }
 
-.info {
+.apresentacao-info {
 	/*margin-top: 100px;*/
 	padding: 100px 20px 60px 20px;
 	background: url('imagens/stucco-trans.png') #505050;
@@ -652,8 +652,21 @@ Widgets
 	margin: 8px 0;
 }
 
+.widget_twitter-profile-tracker.sidebar-box a {
+    display: unset;
+    margin: 0;
+}
+
 .sidebar-box p{
 	border-bottom:  1px solid #CCCCCC;
+}
+
+.widget_twitter-profile-tracker.sidebar-box p{
+	border-bottom:  none;
+}
+
+.tweets li {
+	overflow: hidden;
 }
 
 .sidebar-box .date{
@@ -1242,7 +1255,7 @@ IE-8
 	width: 600px;
 }
 
-#ie8 .container .miolo .span4 .info {
+#ie8 .container .miolo .span4 .apresentacao-info {
 	margin-left: -20px;
 }
 
@@ -1275,8 +1288,8 @@ Ajustes - responsivo
 		margin: 8px 0 0 28px;
 	}
 	
-	.info{
-	margin-left: -20px;
+	.apresentacao-info {
+		margin-left: -20px;
 	}
 }
  
@@ -1307,7 +1320,7 @@ Ajustes - responsivo
 	.right           { margin: 5px 20px; }
 	.left            { margin: 5px -15px; }
 	.brand a         { display:table; margin:0 auto; }
-	.info            { width: 300px; }
+	.apresentacao-info { width: 300px; }
 	.sidebar-box     { width: 300px; }
 	.dest-titulo     { font-size: 28px; width: 290px; }
 	.title-sub-dest  { width: 300px; }
