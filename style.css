@@ -194,6 +194,50 @@ Redes sociais
 	background: url('imagens/sprite.png') no-repeat -4px -79px;
 }
 
+#instagram{
+	background: url('imagens/sprite.png') no-repeat -6px -320px;
+	width: 35px;
+	height: 35px;
+	display: block;
+	webkit-border-radius: 5px; /*safari e chrome*/
+	-moz-border-radius: 5px; /*firefox*/
+	-o-border-radius: 5px; /*opera hipster*/
+	border-radius: 5px;
+	float:left;
+	margin-right: 5px;
+}
+
+#instagram:hover{
+	
+}
+
+#pinterest{
+	background: url('imagens/sprite.png') no-repeat -6px -290px;
+	width: 35px;
+	height: 35px;
+	display: block;
+	webkit-border-radius: 5px; /*safari e chrome*/
+	-moz-border-radius: 5px; /*firefox*/
+	-o-border-radius: 5px; /*opera hipster*/
+	border-radius: 5px;
+	float:left;
+	margin-right: 5px;
+}
+
+#flickr{
+		background: url('imagens/sprite.png') no-repeat -6px -352px;
+	width: 35px;
+	height: 35px;
+	display: block;
+	webkit-border-radius: 5px; /*safari e chrome*/
+	-moz-border-radius: 5px; /*firefox*/
+	-o-border-radius: 5px; /*opera hipster*/
+	border-radius: 5px;
+	float:left;
+	margin-right: 5px;
+}
+
+
 #rss {
 	background: url('imagens/sprite.png') no-repeat -6px -156px;
 	width: 35px;
