@@ -9,11 +9,6 @@
         return;
     }
 ?>
-
- 
- 	<div class="comm-head">
-	    <h4><?php _x('Comentários', 'comentarios', '_mobilize'); ?><span class="commen"><?php comments_number('Nenhum comentário', '1 Comentário', '% Comentários' );?></span></h4>
-    </div>
     <?php if ( comments_open() ) : ?>
 		<div id="respond-comment">
 			<?php comment_form(); ?>
@@ -23,6 +18,9 @@
         <h3><?php _e('Os comentários estão fechados.', 'mobize'); ?></h3>
 	<?php endif; ?>
 	<?php if ( have_comments() ) : ?>
+		<div class="comm-head">
+		    <h4><?php _x('Comentários', 'comentarios', '_mobilize'); ?><span class="commen"><?php comments_number('Nenhum comentário', '1 Comentário', '% Comentários' );?></span></h4>
+	    </div>
 		<ol class="commentlist">
         	<?php wp_list_comments('avatar_size=64&type=comment');
         	paginate_comments_links( array('prev_text' => '&laquo;', 'next_text' => '&raquo;') ); ?>
