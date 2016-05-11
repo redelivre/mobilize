@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Front Page Template
+ *
+ * @since Mobilize 1.0
+ */
+__( 'Contact Template', '_mobilize' );
+
+	get_header(); ?>
   <div class="container miolo">
   
 	  <div class="span4 sid-int">
